@@ -11,27 +11,40 @@ variables for colors
         --contenttext: rgb(29, 28, 27);
         --headingtext: rgb(112, 81, 3);
 
-        /* menu texts */
-        --passivetext: rgb(209, 171, 75);
-        --hovertext: red;
-        --activetext: rgb(255, 245, 238);
 
-        /* button */
-        --buttonpassive: rgb(237, 242, 245);
-        --buttonhover: rgb(209, 171, 75);
-        --buttonactive: rgb(240, 222, 64);
 
         /* background */
         --backwhite: #f5ede6;
         --backblack: #1a1a1a;
         --backgold: rgb(250, 235, 215);
+
+        --navigationBackground: #DCD9D5;
+        --darkBackground: #3E3F38;
+        --lightBackground: #F5F5F5;
     
         /* headings texts */
-        --heading1: #3fbd5a;
-        --heading2: #175913;
-        --text: rgb(0, 41, 21);
-        --link: rgb(22, 180, 122);
+        --heading1: #848C5C;
+        --heading2: #4A514E;
+        --text: #3E3F38;
+        --link: #c0cd47;
+
+
+        /* link */
+
+
+         /* linked texts */
+         --passivetext: #848C5C;
+         --hovertext: #3E3F38;
+         --activetext: #4A514E;
         
+        /* button */
+        --buttonborder: #848C5C;
+        --buttonpassive: rgb(255, 255, 255);
+        --buttonhover: #B8B897;
+        --buttonactive: #848C5C;
+
+
+
       }
     
 /* ------------------------------------------------
@@ -87,7 +100,7 @@ Body
         font-family: 'Microsoft Tai Le';
         list-style: none;
         box-sizing: border-box;
-        background: var(--backwhite);
+        background: var(--lightBackground);
     }
     
 
@@ -104,7 +117,7 @@ Navigation bar
         justify-content: space-between;
         align-items: center;
         padding: 10px 30px;
-        background-color:  rgba(0, 0, 0, 0.863);
+        background-color: var(--navigationBackground);
         
     }
     
@@ -146,7 +159,7 @@ Navigation bar
     }
     
     nav .nav-links ul li :hover {   
-        color:var(--activetext);
+        color:var(--hovertext);
         transition: 0.5s;     
         cursor: pointer;
         } 
@@ -162,7 +175,7 @@ Navigation bar
     }
     
     .square {
-        background-color:var(--backblack);
+        background-color:var(--darkBackground);
         width: 100%;
         height: 10%; 
         }
@@ -171,7 +184,7 @@ Navigation bar
     section {
         height: fit-content;
         overflow: hidden;
-        background-color: #000000;
+        /* background-color: var(--darkBackground); */
     }
     
         /* ------------------------------------------------
@@ -295,7 +308,7 @@ Section 1 : hero parallax
     
     
     .square {
-        background-color:var(--backblack);
+        background-color:var(--darkBackground);
         width: 100%;
         height: 8%; }
 
@@ -437,11 +450,11 @@ page2 {
     height:fit-content;
     padding: auto;
     margin: auto;
-    background-color: var(--backwhite);
+    /* background-color: var(--backwhite); */
 }
 
 .page2 h1 {
-color: var(--headingtext);
+color: var(--heading1);
 margin-left: 8%;
 }
 
@@ -518,14 +531,14 @@ Section 3 : why are we doing this- advantages- 3-6pts
         width:fit-content;
         height:fit-content;
         padding: 2%;
-        background-color: var(--backblack);
+        /* background-color: var(--backblack); */
         /* background: linear-gradient(-45deg, #fffae1, #ddedf7, #f2cee1, #ecd9ca);  */
         /* animation: gradient 15s ease infinite; */
     }
     
     .page3 h1 {
     font-size: 24pt;
-    color: var(--headingtext);
+    color: var(--heading1);
     margin-left: 8%;    
     }
     
@@ -598,7 +611,7 @@ Section 3 : why are we doing this- advantages- 3-6pts
         /* height: 100%; */
         border-radius: 15px;
         transition: .5s;
-        color: var(--backgold);
+        color: var(--text);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        
     }
@@ -609,7 +622,7 @@ Section 3 : why are we doing this- advantages- 3-6pts
     
     .col-text3:hover {
         
-        background-color:rgba(246, 255, 162, 0.489);
+        background-color:var(--buttonhover);
         /* color: var(--contenttext); */
         background-blend-mode: hue;
         transition: 1s;
@@ -645,7 +658,7 @@ Section 4-n : embed examples-1
         padding-left: 2%;
         /* top: 200vh; */
        
-        background-color:rgb(237, 255, 225);
+        /* background-color:rgb(237, 255, 225); */
         /* background: linear-gradient(-45deg, #fffae1, #ddedf7, #f2cee1, #ecd9ca);  */
         animation: gradient 15s ease infinite;
     } 
@@ -677,7 +690,7 @@ Section 4-n : embed examples-1
             margin-top: 2%;
             margin-left: 4%;
             margin-bottom: 4%;
-            background-color: rgb(255, 243, 243);
+            background-color: var(--buttonpassive);
             border-radius: 15px;
             background-repeat: no-repeat;
            
@@ -714,7 +727,7 @@ Section 4-n : embed examples-1
             /* height: 100%; */
             border-radius: 15px;
             transition: .5s;
-            color: var(--backgold);
+            color: var(--buttonpassive);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            
         }
@@ -736,13 +749,13 @@ Section 4-n : embed examples-1
             /* font-size: 13px; */
             font-weight: bold;
             /* margin: 5px; */
-            color: var(--link);
+            color: var(--passivetext);
         }
     
         
         .col-embed4:hover {
             
-            background-color:rgba(246, 255, 162, 0.489);
+            background-color:var(--buttonhover);
             /* color: var(--contenttext); */
             background-blend-mode: hue;
             transition: 1s;
@@ -763,13 +776,13 @@ Section 4-n : embed examples-1
             
            
             margin: auto;
-            
+            margin-bottom: 5px;
             width:fit-content;
             border-radius: 16px;
         
             border: solid 2px; 
-            background-color: none;
-            border-color: var(--backgold);
+            background-color: var(--buttonpassive);
+            border-color: var(--buttonborder);
             align-items: center;   
         
             font-size: 1.5em;
@@ -781,7 +794,7 @@ Section 4-n : embed examples-1
         
         .button4:hover {
             background-color:var(--buttonhover);
-            color: var(--activetext);
+            color: var(--link);
             cursor: pointer;
             transition: 1s;
         }
@@ -812,7 +825,7 @@ Section 5-n : embed examples-1
     padding-top: 10%;
     padding-left: 2%;
     /* top: 200vh; */   
-    background-color:rgb(219, 255, 216);
+    /* background-color:rgb(219, 255, 216); */
 } 
 
 .page5 h1 {
@@ -842,7 +855,7 @@ Section 5-n : embed examples-1
         margin-top: 2%;
         /* margin-left: 4%; */
         margin-bottom: 4%;
-        background-color: rgb(255, 243, 243);
+        background-color: var(--buttonpassive);
         border-radius: 15px;
         background-repeat: no-repeat;
        
@@ -879,7 +892,7 @@ Section 5-n : embed examples-1
        
         border-radius: 15px;
         transition: .5s;
-        color: var(--backgold);
+        color: var(--buttonpassive);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        
     }
@@ -901,13 +914,13 @@ Section 5-n : embed examples-1
         /* font-size: 13px; */
         font-weight: bold;
         /* margin: 5px; */
-        color: var(--link);
+        color: var(--passivetext);
     }
 
     
     .col-embed5:hover {
         
-        background-color:rgba(246, 255, 162, 0.489);
+        background-color:var(--buttonhover);
         /* color: var(--contenttext); */
         background-blend-mode: hue;
         transition: 1s;
