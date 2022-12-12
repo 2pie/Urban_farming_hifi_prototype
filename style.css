@@ -115,19 +115,28 @@ Navigation bar
     
     }
     
+    .nav-button {
+        background-color: aquamarine; 
+        height: fit-content;
+        margin-right: 10px;
+    }
+
     nav .nav-links ul {
         display: flex;
         flex-direction: row;
-        padding-right: 100% !important;
+        /* padding-right: 100% !important; */
         /* right: 100%; */
     
     }
+
+ 
     
     nav .nav-links ul li {
         padding:  10px;
         
         list-style: none;
         font-size: 1.0em;
+        font-weight: bold;
         color: var(--passivetext);
         /* background-color: aqua;     */
         margin: auto;
@@ -828,7 +837,7 @@ Section 5-n : embed examples-1
         display: flex;
         float:left;
         width: 90%;
-        height: 50%;
+        height: 70%;
         
         margin-top: 2%;
         /* margin-left: 4%; */
@@ -902,8 +911,6 @@ Section 5-n : embed examples-1
         /* color: var(--contenttext); */
         background-blend-mode: hue;
         transition: 1s;
-        
-        
     }
     
     
@@ -912,40 +919,11 @@ Section 5-n : embed examples-1
         content: "";
         display: table;
         clear: both;
+        margin-bottom: 4%;
       }
 
 
-    .button5 {
-        
-       
-        margin: auto;
-        
-        width:fit-content;
-        border-radius: 16px;
-    
-        border: solid 2px; 
-        background-color: none;
-        border-color: var(--backgold);
-        align-items: center;   
-    
-        font-size: 1.5em;
-        color: var(--text);
-        text-align:center;
-        padding: 17px;
-      
-    }
-    
-    .button5:hover {
-        background-color:var(--buttonhover);
-        color: var(--activetext);
-        cursor: pointer;
-        transition: 1s;
-    }
-    
-    .button5:active {
-        background-color:var(--buttonactive);
-        transition: 0.5s;
-    }
+
 
 
 
