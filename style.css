@@ -177,7 +177,7 @@ Navigation bar
     .square {
         background-color:var(--darkBackground);
         width: 100%;
-        height: 9%; 
+        height: 10%; 
         }
     
     
@@ -196,31 +196,30 @@ Section 1 : hero parallax
 
 
 
-
-
-    section.sky{
-        position: absolute !important;
-        left: -10% !important;
+    
+    screen.sky{
+        position: absolute;
+        left: 200px !important;
         top: unset !important;
-        bottom: -200px;
+        height: 60%; 
     }
     
     .sky img{
         width: 100%;
-        height: 80%;
+        height: 90%;
         filter: brightness(0.8);
     }
     
-    .backC {
+    .backCity {
         position: absolute !important;
-        left: 5% !important;
+        right: -45% !important;
         /* top: 25vh !important; */
         top: unset !important;
-        bottom: 17vh;
+        bottom: -5%;
     }
     
-    .backC img{
-        width: 90%;
+    .backCity img{
+        width: 80%;
         filter: brightness(.8);
         
     }
@@ -228,79 +227,82 @@ Section 1 : hero parallax
     
     
     
-    .girl {
+    .middleCity {
         position: absolute;
-        left: 5% !important;
-        bottom: 100px !important;
+        left: 15% !important;
+        bottom: -10% !important;
+        /* top: 70vh !important; */
         top:unset !important;
+        right:unset;
     }
     
-    .girl img{
+    .middleCity img{
        
         z-index: 2;
-        width: 90%;
-        /* left: -20px; */
-        top: 20vh !important;
+        width: 100%;
+        height: 100%;
+        
         filter: brightness(0.8);
     }
     
-    .frontC {
+    .frontCity {
         position: absolute;
-        left: 10% !important;
-        bottom: 40px !important;
+        left: -8% !important;
+        bottom: -5% !important;
         top:unset !important;
     }
     
     
-    .frontC img{
+    .frontCity img{
         z-index: 2;
-        width: 90%;
+        width: 80%;
         /* left: -20px; */
         top: 20vh !important;
         filter: brightness(0.8);
     }
     
-    .dragon {
+    .stars {
         position: absolute;
-        right: -6% !important;
-        bottom: -50px !important;
+        left: 20% !important;
+        bottom: -3% !important;
+        top: unset !important;
+        right: unset !important; 
+    }
+    
+    .stars img {
+        width: 100%;
+        height: 100%;
+        /* z-index: 3; */
+        filter: brightness(1);
+        opacity: 1;
+    }
+    
+    .girl {
+        position: absolute;
+        right: -10% !important;
+        bottom: -4% !important;
         top: unset !important;
         left: unset !important; 
     }
     
-    .dragon img {
-        width: 90%;
-        height: 90%;
-        z-index: 3;
-        filter: brightness(1);
-    }
-    
-    .cliff {
-        position: absolute;
-        left: -5% !important;
-        bottom: -0px !important;
-        top: unset !important;
-        right: unset !important; 
-    }
-    
-    .cliff img {
-        width: 110%;
+    .girl img {
+        width: 100%;
         height: 100%;
-        z-index: 3.5;
+        /* z-index: 3.5; */
         filter: brightness(0.9);
     }
     
-    .textpic {
+    .wall {
         position: absolute;
-        left: 8% !important;
-        bottom: 200px !important;
+        left: 0% !important;
+        bottom: -6% !important;
         top: unset !important;
-        right: unset !important; 
+        /* right: unset !important;  */
     }
     
-    .textpic img {
-        width: 80%;
-        height: 80%;
+    .wall img {
+        width: 100%;
+        height: 85%;
         z-index: 3;
         filter: brightness(0.9);
     }
