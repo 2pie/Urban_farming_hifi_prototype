@@ -42,6 +42,7 @@ variables for colors
         --buttonpassive: rgb(255, 255, 255);
         --buttonhover: #B8B897;
         --buttonactive: #848C5C;
+        --buttontexthover: #ffffff;
 
 
 
@@ -88,7 +89,7 @@ Scroll bar
     
     
 /* ------------------------------------------------
-Body
+Body and globals
 ------------------------------------------------ */
 
 
@@ -97,12 +98,23 @@ Body
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        font-family: 'Microsoft Tai Le';
+        font-family: 'Tahoma';
         list-style: none;
         box-sizing: border-box;
         background: var(--lightBackground);
     }
     
+    h1 {
+        font-size: 48pt;
+        font-weight: lighter;
+        color: var(--heading1);
+        margin-left: 8%;
+    }
+
+
+
+
+
 
 /* ------------------------------------------------
 Navigation bar
@@ -129,10 +141,18 @@ Navigation bar
     }
     
     .nav-button {
-        background-color: aquamarine; 
-        height: fit-content;
+        /* background-color: var(--buttonpassive);  */
+        /* height: 8%; */
         margin-right: 10px;
     }
+
+    .nav-button :hover{
+        /* background-color: var(--buttonactive); s */
+        
+    }
+
+
+
 
     nav .nav-links ul {
         display: flex;
@@ -160,7 +180,7 @@ Navigation bar
     
     nav .nav-links ul li :hover {   
         color:var(--hovertext);
-        transition: 0.5s;     
+        transition: 0.1s;     
         cursor: pointer;
         } 
     
@@ -306,7 +326,61 @@ Section 1 : hero parallax
         z-index: 3;
         filter: brightness(0.9);
     }
+
+    .herotext {
+        position: absolute;
+        left: 8% !important;
+        bottom: 30% !important;
+        /* top: unset !important; */
+        right: unset !important; 
+
+        color: var(--heading1);
+    }
     
+    .herotext h1{
+        font-size: 48pt !important;
+        font-weight: lighter !important;
+        margin-left: 0% !important;
+    }
+
+
+    .button1 {
+            
+        position: absolute;
+        left: 8% !important;
+        bottom: 22% !important;
+        top: unset !important;
+        right: unset !important; 
+        
+        margin: auto;
+        margin-bottom: 5px;
+        width:fit-content;
+        border-radius: 16px;
+    
+        border: solid 2px; 
+        background-color: var(--buttonpassive);
+        border-color: var(--buttonborder);
+        align-items: center;   
+    
+        font-size: 1.5em;
+        color: var(--text);
+        text-align:center;
+        padding: 17px;
+      
+    }
+    
+    .button1:hover {
+        background-color:var(--buttonhover);
+        color: var(--buttontexthover);
+        cursor: pointer;
+        /* transition: 1s; */
+    }
+    
+    .button1:active {
+        background-color:var(--buttonactive);
+        /* transition: 0.1s; */
+    }  
+
     
     
   /* for tablet */
@@ -461,10 +535,6 @@ page2 {
     /* background-color: var(--backwhite); */
 }
 
-.page2 h1 {
-color: var(--heading1);
-margin-left: 8%;
-}
 
 
 .page2 mapwrapper { 
@@ -544,11 +614,6 @@ Section 3 : why are we doing this- advantages- 3-6pts
         /* animation: gradient 15s ease infinite; */
     }
     
-    .page3 h1 {
-    font-size: 24pt;
-    color: var(--heading1);
-    margin-left: 8%;    
-    }
     
     .column3 {
         display: flex;
@@ -671,11 +736,6 @@ Section 4-n : embed examples-1
         animation: gradient 15s ease infinite;
     } 
     
-    .page4 h1 {
-        font-size: 24pt;
-        color: var(--heading1);
-        margin-left: 8%;    
-        }
 
     .page4 h2 {
         font-size: 18pt;
@@ -802,7 +862,7 @@ Section 4-n : embed examples-1
         
         .button4:hover {
             background-color:var(--buttonhover);
-            color: var(--link);
+            color: var(--buttontexthover);
             cursor: pointer;
             transition: 1s;
         }
@@ -836,11 +896,6 @@ Section 5-n : embed examples-1
     /* background-color:rgb(219, 255, 216); */
 } 
 
-.page5 h1 {
-    font-size: 24pt;
-    color: var(--heading1);
-    margin-left: 8%;    
-    }
 
 .page5 h2 {
     font-size: 18pt;
