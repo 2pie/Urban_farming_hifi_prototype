@@ -297,7 +297,7 @@ Section 1 : hero parallax
         left: 0% !important;
         bottom: -6% !important;
         top: unset !important;
-        /* right: unset !important;  */
+        right: unset !important; 
     }
     
     .wall img {
