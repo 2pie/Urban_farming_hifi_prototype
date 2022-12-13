@@ -111,14 +111,30 @@ Section 2 : google map
 
         <h1 >So far</h1>
 
-        <div class="mapwrapper">
-            <div id="one">Location </div>
-            <div id="two">No. of People</div>
+        <div id="one" class="select">
+            <form action="/action_page.php">
+                
+                <select name="Location" id="location">
+                  <option value="Chennai">Chennai</option>
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Kolkata">Kolkata</option>
+                </select>
+                <!-- <br><br> -->
+                <!-- <input type="submit" value="Submit"> -->
+              </form>
+        </div>
+        <div id="two">No. of People</div>
         </div>
 
 
-        <div class="googleMap">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1l2Goi-e3poIjVUAtAqY1QHlKQMxKPtI&ehbc=2E312F" width="1240" height="480"></iframe>
+        <div class="mapwrapper">
+            
+
+
+        <div >
+            <iframe class="googleMap" src="https://www.google.com/maps/d/embed?mid=1l2Goi-e3poIjVUAtAqY1QHlKQMxKPtI&ehbc=2E312F" ></iframe>
         </div>
 
     </div> 
@@ -153,7 +169,7 @@ Section 3 : advantages- table
         <img  src="img/page3/dummy.png" alt="Card image cap">
         </div>
         <div class="col-text3" onclick="location.href='goldenPlatter.html'">
-            <h2 >Creates Green Spaces</h2>
+            <h3>Creates Green Spaces</h3>
             Lorem ipsum dolor sit amet consectetur adi
         </div>
             
@@ -164,7 +180,7 @@ Section 3 : advantages- table
             <img  src="img/page3/dummy.png" alt="Card image cap">
             </div>
         <div class="col-text3" onclick="location.href='ilumina.html'">
-            <h2 >Reduces pollution</h2>
+            <h3 >Reduces pollution</h3>
              Lorem ipsum dolor sit amet consectetur adi
         </div>
             
@@ -175,7 +191,7 @@ Section 3 : advantages- table
         <img  src="img/page3/dummy.png" alt="Card image cap">
         </div>
         <div class="col-text3" onclick="location.href='veidya.html'">
-            <h2 >Food security</h2>
+            <h3 >Food security</h3>
             Lorem ipsum dolor sit amet consectetur adi
         </div>
             
@@ -186,7 +202,7 @@ Section 3 : advantages- table
         <img  src="img/page3/dummy.png" alt="Card image cap">
         </div>
         <div class="col-text3" onclick="location.href='whereNext.html'">
-            <h2 >Welness of public</h2>
+            <h3 >Welness of public</h3>
             Lorem ipsum dolor sit amet consectetur adi
         </div>
             
@@ -197,7 +213,7 @@ Section 3 : advantages- table
         <img  src="img/page3/dummy.png" alt="Card image cap">
         </div>
         <div class="col-text3" onclick="location.href='p5.html'">
-            <h2 >Resilient Food system</h2>
+            <h3 >Resilient Food system</h3>
             Lorem ipsum dolor sit amet consectetur adi
         </div>
             
@@ -208,7 +224,7 @@ Section 3 : advantages- table
         <img  src="img/page3/dummy.png" alt="Card image cap">
         </div>
         <div class="col-text3" onclick="location.href='art.html'">
-            <h2 >Reduces heat Island effect</h2>
+            <h3 >Reduces heat Island effect</h3>
             Lorem ipsum dolor sit amet consectetur adi
         </div>
             

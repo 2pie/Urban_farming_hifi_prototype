@@ -98,18 +98,54 @@ Body and globals
         margin: 0;
         padding: 0;
         overflow-x: hidden;
-        font-family: 'Tahoma';
+        font-family: 'Microsoft JhengHei UI';
         list-style: none;
         box-sizing: border-box;
         background: var(--lightBackground);
     }
     
     h1 {
-        font-size: 48pt;
+        font-family: 'Tahoma';
+        font-size: 42pt;
         font-weight: lighter;
         color: var(--heading1);
         margin-left: 8%;
     }
+
+    h2 {
+        font-family: 'Microsoft JhengHei UI';
+        font-size: 18pt;
+        font-weight: lighter;
+        color: var(--heading2);
+        margin-left: 8%; 
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 992px) {
+
+
+        h1 {
+            font-size: 24pt;
+            font-weight: lighter;
+            margin-left: 8%;
+        }
+    
+        h2 {
+            font-size: 18pt;
+            font-weight: lighter;
+            margin-left: 8%; 
+        }
+
+    }
+
+
+
+
+
 
 
 
@@ -123,7 +159,7 @@ Navigation bar
     nav {
         position: fixed;
         z-index: 100;
-        height: 7vh;
+        height: 6vh;
         width: 96%;
         display: flex;
         justify-content: space-between;
@@ -193,6 +229,20 @@ Navigation bar
     nav .nav-links ul img:hover {
         cursor: pointer;
     }
+
+
+
+/* Tablet */
+
+
+    @media screen and (max-width: 992px) {
+        nav {
+        height: 4vh;            
+        }
+    }
+
+
+
     
     .square {
         background-color:var(--darkBackground);
@@ -382,52 +432,54 @@ Section 1 : hero parallax
     }  
 
     
+
     
-  /* for tablet */
+  /*-------------------------
+   for tablet 
+   ------------------------------*/
+
+
 
 
   @media screen and (max-width: 992px) {
     
     
-    .square {
-        background-color:var(--darkBackground);
-        width: 100%;
-        height: 8%; }
-
-
-    .backC {
+   
+    .backCity {
         position: absolute !important;
-        left: 5% !important;
+        left: 29% !important;
         /* top: 25vh !important; */
         top: unset !important;
-        bottom: 5vh;
+        bottom: 1vh;
+        height: 80%;
     }
 
-    .girl {
+    .middleCity{
         position: absolute;
-        left: 5% !important;
-        bottom: 60px !important;
+        left: 15% !important;
+        bottom: -2% !important;
         top:unset !important;
+        height: 80%;
     }
 
-    .frontC {
+    .frontCity {
         position: absolute;
         left: 10% !important;
-        bottom: 25px !important;
+        bottom: 21px !important;
         top:unset !important;
     }
     
-    .dragon {
+    .stars {
         position: absolute;
-        left: 54% !important;
-        bottom: 8px !important;
+        left: 23% !important;
+        bottom: 3% !important;
         top:unset !important;
     }
     
-    .cliff {
+    .girl {
         position: absolute;
         left: -5% !important;
-        bottom: -0px !important;
+        bottom: -10px !important;
         top: unset !important;
         right: unset !important; 
     }
@@ -440,14 +492,39 @@ Section 1 : hero parallax
         right: unset !important; 
     }
     
-    .textpic img {
-        width: 50%;
-        height: 40%;
-        z-index: 3;
-        filter: brightness(0.9);
-        
+    .herotext {
+        /* position: absolute; */
+        left: 8% !important;
+        bottom: 76% !important;
+        /* top: unset !important; */
+        right: unset !important; 
+
+        /* color: var(--heading1); */
     }
+
+    .herotext h1{
+        font-size: 24pt !important;
+        font-weight: lighter !important;
+        margin-left: 0% !important;
+    }
+
+    .button1 {
+            
+        /* position: absolute; */
+        left: 7.5% !important;
+        bottom: 68% !important;
+        top: unset !important;
+        right: unset !important; 
+        
     
+        font-size: 16pt;
+        padding: 10px;
+        border-radius: 10px;
+        
+      
+    }
+
+       
     } 
 
 
@@ -523,9 +600,24 @@ Section 1 : hero parallax
     
     
   
+
+
+
+
+
+
+
         /* ------------------------------------------------
 Section 2 : google map
 ------------------------------------------------ */ 
+
+
+
+
+
+
+
+
 
 page2 {
     width:fit-content;
@@ -538,13 +630,13 @@ page2 {
 
 
 .page2 mapwrapper { 
-    border : 2px solid rgb(216, 12, 12); 
+    border : var(--buttonborder); 
     overflow:hidden;
     padding-left: 2%;
   }
   
   .page2 mapwrapper div {
-     min-height: 200px;
+     min-height: 300px;
      
   }
 
@@ -552,23 +644,95 @@ page2 {
     background-color: white;
     float:left; 
     margin-left: 8%;
-    margin-right:20px;
-    width:200px;
-
-    border:2px dashed #ccc;
-    /* border-right:2px solid #000; */
-    font-size:24pt;
+    margin-right:10%;
+    width:250px;
+    height: 40px;
+    border: 2px solid var(--buttonborder);
+    
+    text-align: center;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 18pt;
+    font-weight: lighter;
+    color: var(--heading2);
   }
+
+  
+
+  select {
+   
+    background: rgb(255, 255, 255);
+    /* font-size:24pt; */
+    width: 100%;
+    height: 100%;
+    /* color: var(--text); */
+    cursor: pointer;
+    border: 1px solid var(--buttonborder);
+
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 18pt;
+    font-weight: lighter;
+    color: var(--heading2);
+}
+ 
+
+
   #two { 
     background-color: white;
     overflow:hidden;
     margin:10px;
-    width:200px;
-    /* min-height:70px; */
-    border:2px dashed #ccc;
-    font-size:24pt;
+    padding: 5px;
+   
+    width:250px;
+    border: 3px solid var(--buttonborder);
+    text-align: center;
+
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 18pt;
+    font-weight: lighter;
+    color: var(--heading2);
   }
   
+
+
+
+  .googleMap {
+  
+    margin: 2%;
+    margin-left: 8%;
+    margin-bottom: 9%;
+
+    width: 1220px;
+    height: 500px;
+  }
+
+
+
+  /* Tablet */
+
+
+@media screen and (max-width: 992px) {
+    #one { 
+        /* float: none; */
+        /* margin-right:0; */
+        /* width:auto; */
+        /* border:0; */
+        /* border-bottom:2px solid #000;     */
+      }
+
+
+      .googleMap { 
+        width: 600px;
+        height: 500px;
+        margin-top: 4%;
+      }
+
+
+
+}
+
+
+
+/* phone? */
   @media screen and (max-width: 400px) {
      #one { 
       float: none;
@@ -578,18 +742,6 @@ page2 {
       border-bottom:2px solid #000;    
     }
   }
-
-
-  .googleMap {
-  
-    margin: 2%;
-    margin-left: 8%;
-    margin-bottom: 9%;
-    /* margin-right: auto; */
-
-  }
-
-  /* do media for both */
 
 
 
@@ -689,7 +841,7 @@ Section 3 : why are we doing this- advantages- 3-6pts
        
     }
 
-    .col-text3 h2 {
+    .col-text3 h3 {
         font-size: 16pt;
     }
     
@@ -926,7 +1078,7 @@ Section 5-n : embed examples-1
    
     @media screen and (max-width: 992px) {
         .column5 {
-          width: 45%;
+          width: 84%;
           margin-top: 3%;
         margin-left: 3%;
         }
@@ -1001,21 +1153,6 @@ Section 5-n : embed examples-1
 
 
 
-
-
-
-
-
-
-
-
- 
-
-
-
-     /* ------------------------------------------------
-      Section 7 : useless section 7
-      ------------------------------------------------ */  
     
     
     
