@@ -177,7 +177,7 @@ Navigation bar
     .square {
         background-color:var(--darkBackground);
         width: 100%;
-        height: 10%; 
+        height: 9%; 
         }
     
     
@@ -187,9 +187,15 @@ Navigation bar
         /* background-color: var(--darkBackground); */
     }
     
+
+
+
         /* ------------------------------------------------
 Section 1 : hero parallax
 ------------------------------------------------ */
+
+
+
 
 
     section.sky{
